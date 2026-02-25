@@ -1,0 +1,22 @@
+# Secrets (Security first!)
+app/config.py
+.env
+backend/.env
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+env/
+backend/__pycache__/
+
+# Node / VS Code Extension (Important!)
+node_modules/
+vscode-extension/node_modules/
+vscode-extension/out/
+vscode-extension/src/*.js
+.vscode/
+
+# RAG specific
+vector_store.bin
+backend/vector_store.bin
