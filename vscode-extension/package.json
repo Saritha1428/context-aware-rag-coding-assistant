@@ -12,25 +12,25 @@
     "activationEvents": [],
     "main": "./out/extension.js",
     "contributes": {
-        "viewsContainers": {
-            "activitybar": [
-                {
-                    "id": "rag-ai-sidebar",
-                    "title": "RAG Assistant",
-                    "icon": "$(comment-discussion)"
-                }
-            ]
-        },
-        "views": {
-            "rag-ai-sidebar": [
-                {
-                    "type": "webview",
-                    "id": "ragChatSidebar",
-                    "name": "Chat with Project"
-                }
-            ]
-        }
+    "viewsContainers": {
+        "activitybar": [
+            {
+                "id": "rag-ai-sidebar",
+                "title": "RAG Assistant",
+                "icon": "$(comment-discussion)"
+            }
+        ]
     },
+    "views": {
+        "rag-ai-sidebar": [
+            {
+                "type": "webview",
+                "id": "ragChatSidebar",
+                "name": "Chat with Project"
+            }
+        ]
+    }
+},
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",

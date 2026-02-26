@@ -2,8 +2,8 @@ from service import get_connection_string
 from utils import format_user_data, validate_email
 
 def register_user(name, age, email):
-    if validate_email(email):
-        conn = get_connection_string()
+    # if validate_email(email):
+        conn  get_connection_string()
         print(f"Connecting to {conn}")
         
         # Inconsistent usage: format_user_data requires strings
